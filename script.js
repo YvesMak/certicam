@@ -23,3 +23,14 @@ function toggleSelection(type) {
 // Initialisation au chargement
 window.addEventListener('DOMContentLoaded', updateChoiceBg);
 window.addEventListener('resize', updateChoiceBg);
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.header');
+  const mainContent = document.querySelector('.main-content');
+  if(window.scrollY > 10) {
+    header.classList.add('fixed');
+    mainContent.style.paddingTop = header.offsetHeight + 'px';
+  } else {
+    header.classList.remove('fixed');
+    mainContent.style.paddingTop = '';
+  }
+});

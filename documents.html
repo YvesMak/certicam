@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documents Certicam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="menu-icon"><span>&#9776;</span></div>
+    <div class="profile-pic"><img src="profile.jpg" alt="Profil" width="40" height="40" style="border-radius:50%"></div>
+    <div class="logo-certicam"><img src="logo.png" alt="Certicam Logo" width="90"><span style="font-weight:600; font-size:16px; color:#444; margin-left:8px;">Certicam</span></div>
+  </header>
+  <div class="main-content">
+    <div class="title-row">Bonjour Coco, <span>consultez vos documents !</span></div>
+    <div class="search-bar">
+      <input type="text" placeholder="Rechercher par Institution émettrice, date de validité, nom du document">
+      <button class="filter-btn"><span style="font-size:18px; margin-right:6px;">&#9881;</span>Filtres</button>
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nom du document</th>
+            <th>Type/Catégorie</th>
+            <th>Institution émettrice</th>
+            <th>Date de validité</th>
+            <th>Statut</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Relevé bancaire<br><span style="color:#aaa; font-size:13px;">Mis en ligne le 12 Mai 2025</span></td>
+            <td>Banque</td>
+            <td>Banque XYZ</td>
+            <td>12 Mai 2026</td>
+            <td><span class="doc-status">Pas valide</span></td>
+            <td><button class="action-btn">Payer</button><button class="view-btn">&#128065;</button></td>
+          </tr>
+          <tr>
+            <td>CNI<br><span style="color:#aaa; font-size:13px;">Mis en ligne le 12 Mai 2025</span></td>
+            <td>Identité</td>
+            <td>DGSN</td>
+            <td>12 Décembre 2035</td>
+            <td><span class="doc-status">Pas valide</span></td>
+            <td><button class="action-btn">Payer</button><button class="view-btn">&#128065;</button></td>
+          </tr>
+          <tr>
+            <td>Extrait de casier judiciaire<br><span style="color:#aaa; font-size:13px;">Mis en ligne le 12 Mai 2025</span></td>
+            <td>Justice</td>
+            <td>Tribunal de Ndokoti</td>
+            <td>12 Décembre 2025</td>
+            <td><span class="doc-status valid">Valide</span></td>
+            <td><button class="action-btn download">Télécharger</button><button class="view-btn">&#128065;</button></td>
+          </tr>
+          <tr>
+            <td>Relevé bancaire<br><span style="color:#aaa; font-size:13px;">Mis en ligne le 12 Mai 2025</span></td>
+            <td>Banque</td>
+            <td>Banque XYZ</td>
+            <td>12 Mai 2026</td>
+            <td><span class="doc-status">Pas valide</span></td>
+            <td><button class="action-btn">Payer</button><button class="view-btn">&#128065;</button></td>
+          </tr>
+          <tr>
+            <td>Relevé bancaire<br><span style="color:#aaa; font-size:13px;">Mis en ligne le 12 Mai 2025</span></td>
+            <td>Banque</td>
+            <td>Banque XYZ</td>
+            <td>12 Mai 2026</td>
+            <td><span class="doc-status">Pas valide</span></td>
+            <td><button class="action-btn">Payer</button><button class="view-btn">&#128065;</button></td>
+          </tr>
+          <tr>
+            <td>Relevé bancaire<br><span style="color:#aaa; font-size:13px;">Mis en ligne le 12 Mai 2025</span></td>
+            <td>Banque</td>
+            <td>Banque XYZ</td>
+            <td>12 Mai 2026</td>
+            <td><span class="doc-status">Pas valide</span></td>
+            <td><button class="action-btn">Payer</button><button class="view-btn">&#128065;</button></td>
+          </tr>
+          <tr>
+            <td>Relevé bancaire<br><span style="color:#aaa; font-size:13px;">Mis en ligne le 12 Mai 2025</span></td>
+            <td>Banque</td>
+            <td>Banque XYZ</td>
+            <td>12 Mai 2026</td>
+            <td><span class="doc-status">Pas valide</span></td>
+            <td><button class="action-btn">Payer</button><button class="view-btn">&#128065;</button></td>
+          </tr>
+          <tr>
+            <td>Relevé bancaire<br><span style="color:#aaa; font-size:13px;">Mis en ligne le 12 Mai 2025</span></td>
+            <td>Banque</td>
+            <td>Banque XYZ</td>
+            <td>12 Mai 2026</td>
+            <td><span class="doc-status">Pas valide</span></td>
+            <td><button class="action-btn">Payer</button><button class="view-btn">&#128065;</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination-row">
+      <div class="doc-count">8 documents <span style="font-size:14px;">&#9660;</span></div>
+      <div class="pagination">
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <span>...</span>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+      </div>
+      <div>
+        <button class="arrow">&lt; Précédent</button>
+        <button class="arrow">Suivant &gt;</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
