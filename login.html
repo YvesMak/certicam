@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            background: #fafafa;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 32px;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .menu-icon {
+            margin-right: 18px;
+        }
+        .profile-pic {
+            margin-right: auto;
+            margin-left: 18px;
+        }
+        .logo-certicam {
+            display: flex;
+            align-items: center;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh;
+        }
+        .center-message {
+            margin-top: 60px;
+            text-align: center;
+        }
+        .add-docs-btn {
+            margin: 32px auto;
+            display: block;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            padding: 18px 36px;
+            font-size: 22px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+        }
+        .activity-section {
+            width: 100%;
+            max-width: 900px;
+            margin: 60px auto 0 auto;
+        }
+        .activity-section ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+        .activity-section li {
+            padding: 12px 18px;
+            border-bottom: 1px solid #eee;
+            font-size: 15px;
+            font-family: 'Outfit', sans-serif;
+        }
+        .activity-section li:last-child {
+            border-bottom: none;
+        }
+        @media (max-width: 700px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 12px 8px;
+            }
+            .main-content {
+                min-height: 60vh;
+            }
+            .activity-section {
+                max-width: 100%;
+                margin: 30px 0 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu-icon">
+            <span>&#9776;</span>
+        </div>
+        <div class="profile-pic">
+            <img src="profile.jpg" alt="Profil" width="40" height="40" style="border-radius:50%">
+        </div>
+        <div class="logo-certicam">
+            <img src="logo.png" alt="Certicam Logo" width="90">
+            <span style="font-weight:600; font-size:16px; color:#444; margin-left:8px;">Certicam</span>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="center-message">
+            <h2 style="color:#888; font-weight:600; text-align:center;">Hello Martin, Bienvenu(e) sur Certicam.<br>Voulez vous ajouter un document ?</h2>
+            <button class="add-docs-btn" style="margin:32px auto; display:block; background:#333; color:#fff; border:none; border-radius:12px; padding:18px 36px; font-size:22px; font-weight:600; cursor:pointer;">
+                <span style="margin-right:10px;">⏺</span> Ajouter documents
+            </button>
+        </div>
+        <div class="activity-section" style="max-width:900px; margin:60px auto 0 auto;">
+            <div style="background:#eaeaea; padding:12px 18px; border-radius:8px 8px 0 0; font-weight:600; font-size:18px; color:#444;">Mon activité</div>
+            <ul style="list-style:none; margin:0; padding:0; background:#fff; border-radius:0 0 8px 8px;">
+                <li style="padding:12px 18px; border-bottom:1px solid #eee; font-size:15px;"><b>Martin Bineli</b> s'est connecté sur Certicam <span style="float:right; color:#888; font-size:13px;">à l’instant</span></li>
+                <li style="padding:12px 18px; border-bottom:1px solid #eee; font-size:15px;"><b>Martin Bineli</b> s'est déconnecté <span style="float:right; color:#888; font-size:13px;">Il y'a 20 minutes</span></li>
+                <li style="padding:12px 18px; border-bottom:1px solid #eee; font-size:15px;"><b>Martin Bineli</b> a ajouté <b>Relevé bancaire Josette Sicsic.pdf</b> au portefeuille de <b>Josette Sicsic</b> <span style="float:right; color:#888; font-size:13px;">Il y'a 23 minutes</span></li>
+                <li style="padding:12px 18px; font-size:15px;"><b>Martin Bineli</b> s'est connecté sur Certicam <span style="float:right; color:#888; font-size:13px;">Il y'a 25 minutes</span></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
